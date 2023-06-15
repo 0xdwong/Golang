@@ -13,6 +13,7 @@ go module 是Go语言从 1.11 版本之后官方推出的版本管理工具，�
 1. go mod init <packageName>
 2. 添加依赖
    
+   比如：
     ```go get go.uber.org/zap```
 
 3. 执行 go run main.go 运行代码, 会自动查找依赖自动下载
