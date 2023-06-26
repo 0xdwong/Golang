@@ -31,5 +31,45 @@ if err := validate.Struct(user); err != nil {
 }
 ```
 
-## tag
-TODO
+## 标签
+官方提供了多种类型的标签，比如字段、格式、字符串、比较，下面罗列部分常用的标签
+
+完整标签见文档：https://github.com/go-playground/validator#baked-in-validations
+
+
+### 格式
+|  标签        |  解释       |
+|  :---       |  :---       |
+|  base64     |  base64     |
+|  btc_addr   |  比特币地址   |
+|  datetime   |  日期        |
+|  email      |  邮箱        |
+|  jwt        |  jwt        |
+|  uuid       |  uuid       |
+|  md5        |  md5 哈希    |
+
+### 字符串
+|  标签        |  解释        |
+|  :---        |  :---       |
+|  alpha       |  只含希腊字母 |
+|  ascii       |  只含 ascii  |
+|  contains    |  包含某字符串  |
+|  startswith  |  以某字符串开头 |
+|  endswith    |  以某字符串结尾 |
+|  number      |  数字 （正整型）|
+|  numeric     |  数字          |
+|  lowercase   |  只包含小写字母  |
+|  uppercase   |  只包含大写字母  |
+
+### 比较
+|  标签            |  解释            |
+|  :---           |  :---            |
+|  eq             |  相等             |
+|  eq_ignore_case |  相等（忽略大小写） |
+|  gt             |  大于             |
+|  gte            |  大于等于          |
+|  lt             |  小于             |
+|  lte            |  小于等于          |
+|  ne             |  不等于            |
+|  ne_ignore_case |  不等于（忽略大小写）|
+
