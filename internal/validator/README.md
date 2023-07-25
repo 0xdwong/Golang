@@ -73,3 +73,10 @@ if err := validate.Struct(user); err != nil {
 |  ne             |  不等于            |
 |  ne_ignore_case |  不等于（忽略大小写）|
 
+
+### 字段
+
+|  标签            |  解释                      |  例子         |
+|  :---            |  :---                     |  :---        |
+|  eqfield         |  与其它字段相等              | `validate:eqfield=Field2`          |
+|  eqcsfield       |  与其它字段相等(跨不同结构体)  | `validate:eqcsfield=Struct2.Field2`  |
